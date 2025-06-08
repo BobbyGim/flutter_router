@@ -52,6 +52,30 @@ class RootScreen extends StatelessWidget {
             },
             child: Text('go query param screen'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              context.push("/nested/a");
+            },
+            child: Text('go nested screen'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              context.go('/login');
+            },
+            child: Text('go to Login  Screen'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              context.go('/login2');
+            },
+            child: Text('go to Login2  Screen'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              context.go('/transition');
+            },
+            child: Text('go to transition  Screen'),
+          ),
         ],
       ),
     );

@@ -8,7 +8,9 @@ class DefaultLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(GoRouterState.of(context).uri.toString())),
+      appBar: AppBar(
+        title: Text(GoRouterState.of(context).fullPath.toString()),
+      ),
       body: Padding(padding: EdgeInsets.all(16), child: body),
     );
   }
